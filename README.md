@@ -55,7 +55,7 @@ Smaller subset is inside the repository **dataset/mini_sparkify_event_data.json*
    - Sparkify_for_small_dataset.ipynb : Jupyter notebook for small dataset 
    - Sparkify_for_small_dataset.html : HTML version of jupyter 
    - Sparkify_full_dataset_on_emr.ipynb : Jupyter notebook for Full dataset on the Amazon EMR. 
-   - 
+  
 
 ### Program and Libraries
 
