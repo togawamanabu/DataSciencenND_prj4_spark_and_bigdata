@@ -15,6 +15,16 @@ This is the link of Blog post about this code. https://medium.com/@togawamanabu/
 
 ![Spark Logo](./images/Apache_Spark_logo.svg.png)
 
+## Problem Statement
+
+This Sparkify web service has a certain churn rate. In order to reduce the churn rate as much as possible, we would like to analyze the user’s log data and predict the users who are likely to churn and prevent them from churning.
+
+## Metrics 
+
+Set a churn flag for churned users and predict this with 0 and 1.
+1 is a churned user.
+Separate all the data into training and test data, create a model using the training data, and then use the test data to determine the F1 score and accuracy to select the most accurate model and parameter.
+
 ### Dataset
 
 The dataset contains users' activity log. we can track user's activity with **userid** and **session**, user's action is recorded in **page** column.
@@ -76,6 +86,13 @@ This size of data is not possible to analyze on a local machine, Therefore, we u
 Also, the data contains unnecessary data, NaN values, duplicates, etc. Cannot be analyzed as is. so, we will clean the data, prepare the data for analysis, and create a model.
 
 Since we don't know which model and parameters are the most optimal, we try multiple models and parameters and select the most accurate model.
+
+## Metrics 
+
+Set a churn flag for churned users and predict this with 0 and 1. 
+1 is a churned user.
+Separate all the data into training and test data, create a model using the training data, and then use the test data to determine the F1 score and accuracy to select the most accurate model and parameter.
+
 
 ## ETL(extract, transform, load) pipeline
 
