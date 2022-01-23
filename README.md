@@ -16,14 +16,30 @@ This is the link of Blog post about this code. https://medium.com/@togawamanabu/
 ![Spark Logo](./images/Apache_Spark_logo.svg.png)
 
 ## Problem Statement
+This Sparkify web service has a certain churn rate. In order to reduce the churn rate as much as possible, we would like to analyze the user's log data and predict the users who are likely to churn and prevent them from churning.
+Follow these steps to solve this problem.
 
-This Sparkify web service has a certain churn rate. In order to reduce the churn rate as much as possible, we would like to analyze the user’s log data and predict the users who are likely to churn and prevent them from churning.
+- **Data overview** - Check what kind of data is available, what kind of content, appropriate categorization, and how many NaN values are, and consider the direction of data analysis.
+- **Data Cleanup** - Select the required data and replace incorrect values.
+- **Data exploration** - Analyze the data more deeply to find items that are related to churn.
+- **Feature Engineering** - Create a matrix of users and functions needed to fit  the model.
+- **Modeling** - Train multiple machine learning models and look for models with good performance.
+- **Tuning** - Train multiple parameter combinations of the best performing model to further improve performance.
+- **Coclution** - Validate the accuracy of the model and analyze user behavior that leads to churn.
 
 ## Metrics 
 
 Set a churn flag for churned users and predict this with 0 and 1.
 1 is a churned user.
 Separate all the data into training and test data, create a model using the training data, and then use the test data to determine the F1 score and accuracy to select the most accurate model and parameter.
+
+Confusion Matrix is describes the complete performance of the model.
+Accuracy = (TP + TN) / TotalPopulation
+Precision= TP / (TP + FP)
+Recall = TP / (TP + FN)
+F1 Score = Harmonic Mean between precision and recall.
+The range for F1 Score is 0 to1. It tells you how precise your classifier is (how many instances it classifies correctly), as well as how robust it is (it does not miss a significant number of instances).
+High precision but lower recall, gives you an extremely accurate, but it then misses a large number of instances that are difficult to classify. The greater the F1 Score, the better is the performance of our model.
 
 ### Dataset
 
